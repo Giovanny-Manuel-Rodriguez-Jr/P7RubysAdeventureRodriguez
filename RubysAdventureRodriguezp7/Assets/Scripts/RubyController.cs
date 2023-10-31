@@ -8,7 +8,7 @@ public class RubyController : MonoBehaviour
     void Start()
     {
         QualitySettings.vSyncCount = 0;
-        Application.targetFrameRate = 10;
+        Application.targetFrameRate = 60;
     }
 
     // Update is called once per frame
@@ -19,7 +19,7 @@ public class RubyController : MonoBehaviour
 
         Vector2 postiton = transform.position;
         postiton.x = postiton.x + 0.1f * horizontal;
-        postiton.y = postiton.y + 0.01f * vertical;
+        postiton.y = postiton.y + 0.1f * vertical;
 
         transform.position = postiton;
     }
